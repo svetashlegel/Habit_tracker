@@ -32,8 +32,6 @@ Then open a new terminal window and run `python manage.py runserver`.
 - http://127.0.0.1:8000/users/token/ - get token for user
 - http://127.0.0.1:8000/users/token/refresh/ - refresh user token
 
-To work with the platform, authorization is required. To do this, after user registration, use your email and password to receive a token. When sending a request to the platform, use the received token in the Authorization section.
-
 ## Work with API (habits)
 - http://localhost:8000/habits/create/ - create habit
 - http://localhost:8000/habits/list/ - show all user's habits
@@ -60,4 +58,16 @@ To work with the platform, authorization is required. To do this, after user reg
 - duration - duration of habit (less than 120 minutes)
 - is_public - flag for public or private habit
 
+## Working with the interface
+### User registration
+![img.png](img.png)
+After registration, go to the telegram bot chat and enter the /start command. After this, wait for a response message from the chat bot, it will take no more than 2 minutes. Now you will receive reminders about your habits in this chat!
+
+### Get access token
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+To work with the platform, authorization is required. To do this, after user registration, use your email and password to receive a token. When sending a request to the platform, use the received token in the Authorization section.
+
+### Create a habit
+![img_3.png](img_3.png)
 
